@@ -27,16 +27,16 @@ class SymDriversOperator(bpy.types.Operator):
             pattern = re.compile(r'(?<![a-zA-Z])([._-]?[lLrR][._-]?)(?![a-zA-Z])') # Patron regex para letras seguidas y/o precedidas de simbolos
             
             def replace(match): # Metodo de la logica del reemplazo
-                letra = match.group(0)
-                if 'L' in letra:
-                    return letra.replace('L', 'R')
-                elif 'R' in letra:
-                    return letra.replace('R', 'L')
-                elif 'l' in letra:
-                    return letra.replace('l', 'r')
-                elif 'r' in letra:
-                    return letra.replace('r', 'l')
-                return letra
+                side = match.group(0)
+                if 'L' in side:
+                    return side.replace('L', 'R')
+                elif 'R' in side:
+                    return side.replace('R', 'L')
+                elif 'l' in side:
+                    return side.replace('l', 'r')
+                elif 'r' in side:
+                    return side.replace('r', 'l')
+                return side
             return pattern.sub(replace, name)
 
         def find_symm_bone(bone_name): # Método para buscar el lateral simétrico
