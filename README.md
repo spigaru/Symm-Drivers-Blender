@@ -3,8 +3,8 @@ This Blender add-on enables automatic symmetrization of drivers within transform
 
 #Key Features:
 
--Supports multiple Armatures.
--Handles invalid drivers.
+- Supports multiple Armatures.
+- Handles invalid drivers.
 
 # New version fix:
 
@@ -14,9 +14,9 @@ This Blender add-on enables automatic symmetrization of drivers within transform
 - Simplify and optimize the symmetric bone name lookup function
 
 # How to use:
--Locate the add-on in your computer folder through the menu Edit>Preferences>Add-on>Install...
--Enter the EDIT MODE of the armature(s)
--Select the bone(s) containing the driver
--Make sure the bone(s) has a symmetrical counterpart
--In the Armature menu, select the operator Symmetrize selected drivers
--Save your precious time
+- Locate the add-on in your computer folder through the menu Edit>Preferences>Add-on>Install...
+- Enter the EDIT MODE of the armature(s)
+- Select the bone(s) containing the driver
+- Make sure the bone(s) has a symmetrical counterpart
+- In the Armature menu, select the operator Symmetrize selected drivers
+- Save your precious time
