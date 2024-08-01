@@ -1,4 +1,4 @@
-# Symm-Drivers for Blender 4.0.0
+# Symm-Drivers for Blender 4.2.0
 This Blender add-on enables automatic symmetrization of drivers within transforms and constraints of selected bones, saving your valuable time.
 
 Key Features:
@@ -13,3 +13,11 @@ Key Features:
 4.Make sure the bone(s) has a symmetrical counterpart
 5.In the Armature menu, select the operator Symmetrize selected drivers
 6.Save your precious time
+
+# New version fix:
+
+- Replace the equivalence dictionary with regex-based logic
+- Correctly handle the letters l and r preceded and/or followed by '.', '-', '_'
+- Ensure that the letters are not surrounded by other letters
+- Simplify and optimize the symmetric bone name lookup function
+
